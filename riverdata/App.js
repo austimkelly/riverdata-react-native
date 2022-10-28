@@ -8,6 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import RDStatesScreen from './components/RDStates';
 import RDStateSitesScreen from './components/RDStateSites';
 import RDSiteGaugesScreen from './components/RDSiteGauges';
+import RDGaugeGraphScreen from './components/RDGaugeGraph';
 
 
 const Stack = createNativeStackNavigator();
@@ -19,6 +20,7 @@ function App() {
         <Stack.Screen name="States" component={RDStatesScreen} />
         <Stack.Screen name="State Sites" component={RDStateSitesScreen} />
         <Stack.Screen name="Site Gauges" component={RDSiteGaugesScreen} />
+        <Stack.Screen name="Gauge Graph" component={RDGaugeGraphScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

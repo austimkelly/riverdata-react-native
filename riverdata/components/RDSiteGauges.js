@@ -13,7 +13,7 @@ const RDSiteGaugesScreen = ({ route, navigation }) => {
     <Button
           title="An action here on a guage value would take you to the graph"
           onPress={() =>
-            navigation.navigate('Site Item Id', { siteItemId: '123' })
+            navigation.navigate('Gauge Graph', { siteItemId: '123' })
           }
         />
     </>
