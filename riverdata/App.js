@@ -4,6 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createAppContainer } from "react-navigation";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Tabs from './components/tabs';
 
 import RDStatesScreen from './components/RDStates';
 import RDStateSitesScreen from './components/RDStateSites';
@@ -22,6 +23,7 @@ function App() {
         <Stack.Screen name="Site Gauges" component={RDSiteGaugesScreen} />
         <Stack.Screen name="Gauge Graph" component={RDGaugeGraphScreen} />
       </Stack.Navigator>
+      <Tabs />
     </NavigationContainer>
   );
 }
