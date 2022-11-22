@@ -10,6 +10,7 @@ const RDStateSitesScreen = ({ route, navigation }) => {
   <>  
     <Text>The state paramenter passed in is: {route.params.name}. 
     This is where we will make an asynchronous API call to get the sites for the chosen stated.
+    Test
     </Text>
     <Button
           title="Go to selected site gauge list"
