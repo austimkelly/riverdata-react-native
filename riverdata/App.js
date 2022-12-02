@@ -18,12 +18,12 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen name="Tabs" component={Tabs} options={{ headerShown: false }}/>
         <Stack.Screen name="States" component={RDStatesScreen} />
         <Stack.Screen name="State Sites" component={RDStateSitesScreen} />
         <Stack.Screen name="Site Gauges" component={RDSiteGaugesScreen} />
         <Stack.Screen name="Gauge Graph" component={RDGaugeGraphScreen} />
       </Stack.Navigator>
-      <Tabs />
     </NavigationContainer>
   );
 }
